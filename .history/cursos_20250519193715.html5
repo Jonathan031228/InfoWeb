@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Facultad Informática - Contacto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <header>
+        <div class="logo" aria-label="Logo Facultad Informática">
+          <!-- SVG ballena simple -->
+          <svg width="48" height="48" viewBox="0 0 64 64" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 30c0-11 14-20 30-20s30 9 30 20-14 20-30 20S10 41 10 30z" />
+            <circle cx="40" cy="25" r="3" fill="#FFD700"/>
+            <path d="M40 28c-5 0-9 4-9 9v2h18v-2c0-5-4-9-9-9z" fill="#0A2463"/>
+          </svg>
+          Facultad Informática
+        </div>
+         <button class="menu-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Abrir menú">&#9776;</button> 
+         <nav>
+          <ul id="nav-menu">
+            <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+            <li><a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a></li>
+            <li><a href="carreras.html"><i class="fas fa-graduation-cap"></i> Carreras</a></li>
+            <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+
+<main>
+  <section class="contact">
+    <h1 class="contact-title">Contacto</h1>
+    <form id="contactForm" class="contactForm" style="max-width: 400px;">
+      <label for="nombre">Nombre:</label><br />
+      <input type="text" id="nombre" name="nombre" required /><br />
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br />
+      <label for="mensaje">Mensaje:</label><br />
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br />
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+    <p id="formMessage" style="color: var(--azul-oscuro); margin-top: 1rem;"></p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Facultad Informática. Todos los derechos reservados.
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
